@@ -1,8 +1,5 @@
 .body {
   text-align: center;
-  &:not(:last-child) {
-    margin-right: 2rem;
-  }
 }
 
 .input {
@@ -32,5 +29,13 @@
     top: 0;
     left: 0;
     object-fit: cover;
+  }
+}
+
+@media (min-width: 767px) {
+  .body {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
   }
 }
